@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: php_practice1
+  name: php-practice1
   labels:
-    app: bookalbum
+    app: php-practice1
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: php_practice1
+      app: php-practice1
   template:
     metadata:
       labels:
-        app: php_practice1
+        app: php-practice1
     spec:
       containers:
       - name: php_practice1
-        image: sneha758/php_practice1:v1
+        image: sneha758/php-practice1:v1
         ports:
         - containerPort: 80
