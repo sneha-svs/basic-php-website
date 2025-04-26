@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: php-practice1
-        image: sneha758/php-practice1:v1
+        image: sneha758/php_practice:v1
         ports:
         - containerPort: 80
